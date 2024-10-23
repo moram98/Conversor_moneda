@@ -1,7 +1,7 @@
-#Conversor de moneda
+# Conversor de moneda
 Este proyecto es un Conversor de Monedas que permite realizar conversiones entre diferentes monedas utilizando una API de tasas de cambio. El usuario puede elegir entre varias conversiones como USD a ARS, ARS a USD, USD a BRL, BRL a USD, USD a COP y COP a USD.
 
-##Características
+## Características
 Conversión entre:
 - Dólar estadounidense (USD) ↔ Peso argentino (ARS)
 - Dólar estadounidense (USD) ↔ Real brasileño (BRL)
@@ -11,11 +11,11 @@ Integración con la API de Exchange Rate para obtener tasas de cambio actualizad
 
 Manejo de errores cuando la API no responde correctamente o se introduce una opción inválida.
 
-##Requisitos
+## Requisitos
 Java 17 o superior.
 Conexión a internet para acceder a la API de tasas de cambio.
 
-##Ejemplo de uso
+## Ejemplo de uso
 
 ===== Conversor de Monedas =====
 Seleccione la conversión que desea realizar:
@@ -37,7 +37,7 @@ Monto original: 500,00 USD
 Monto convertido: 2131585,40 COP
 ***********************************************************
 
-##API Utilizada
+## API Utilizada
 Este proyecto utiliza la API de Exchange Rate para obtener tasas de cambio entre las distintas monedas soportadas. La estructura de respuesta de la API es la siguiente:
 json
 {
