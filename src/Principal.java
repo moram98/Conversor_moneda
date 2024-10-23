@@ -19,25 +19,23 @@ public class Principal {
             System.out.println("===============================");
             System.out.print("Ingrese una opción: ");
 
-            // Validar que la elección esté dentro del rango válido
+
             while (true) {
                 eleccion = scanner.nextInt();
 
                 if (eleccion >= 1 && eleccion <= 7) {
-                    break;  
+                    break;
                 } else {
                     System.out.println("Opción no válida. Intente nuevamente.");
                     System.out.print("Ingrese una opción válida entre 1-7: ");
                 }
             }
 
-            // Verifica si el usuario quiere salir antes de solicitar el monto
             if (eleccion == 7) {
                 System.out.println("Saliendo del programa...");
                 break;
             }
 
-            // Si es una opción válida, pedir el monto
             System.out.print("Ingrese el monto a convertir: ");
             double monto = scanner.nextDouble();
 
@@ -71,16 +69,16 @@ public class Principal {
             }
 
             try {
-                // Llamada al método que realiza la conversión
+
                 double result = ConsultaDeMoneda.convertirMoneda(moneda, monedaConvertida, monto);
                 System.out.println("\n================= Resultado de la Conversión =================");
-                System.out.printf("Monto original: %.2f %s%n", monto, moneda);  // Muestra el monto inicial y la moneda
-                System.out.printf("Monto convertido: %.2f %s%n", result, monedaConvertida);  // Muestra el resultado de la conversión
+                System.out.printf("Monto original: %.2f %s%n", monto, moneda);
+                System.out.printf("Monto convertido: %.2f %s%n", result, monedaConvertida);
                 System.out.println("***********************************************************\n");
             } catch (Exception e) {
                 System.out.println("Ocurrió un error al realizar la conversión: " + e.getMessage());
             }
 
-        } while (true);  // Mantener el ciclo hasta que el usuario elija salir
+        } while (true);
     }
 }
